@@ -47,6 +47,12 @@ public class BaseIntegration {
 		return test.readData("Sheet1");
 	}
 	
+	@DataProvider
+	public Object[][] registerData() throws IOException
+	{
+		return test.readData("Sheet2");
+	}
+	
 	@AfterSuite
 	public void tearDown()
 	{

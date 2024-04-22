@@ -24,6 +24,9 @@ public class LoginPage {
 	@FindBy(id = "submit")
 	WebElement signin;
 	
+	@FindBy(linkText = "Register a new membership")
+	WebElement rePageLink;
+	
 	public void enterEmail(String uName)
 	{
 		email.clear();
@@ -38,6 +41,12 @@ public class LoginPage {
 	{
 		signin.click();
 	}
+	
+	public void clickOnRegisterBtn()
+	{
+		rePageLink.click();
+	}
+	
 	
 	public boolean verifyLoginPageTitle()
 	{
